@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import { Redirect } from "react-router-dom";
 import { isEmpty, map } from 'lodash';
 
+import { setdataPurchase } from '../../actions/dataPurchase';
+
 import Nav from '../../components/Nav';
 
 import './main.scss';
@@ -21,8 +23,31 @@ const detailData = (data, id) => {
 
 const DetailItem = (props) => {
 
-    const { dataAuth, dataStore, match } = props;
+    const { 
+        dataAuth, 
+        dataStore, 
+        match, 
+        dataPurchase, 
+        setdataPurchase,
+        history 
+    } = props;
+
     const dataItems = !isEmpty(dataStore.productPromo) ? detailData(dataStore.productPromo, match.params.id) : {};
+    const dataItemRaw = !isEmpty(dataStore.productPromo) ? dataStore.productPromo : {};
+
+    const addItemPurchase = id => {
+
+        let CurrentData = dataPurchase;
+
+        map(dataItemRaw, (item) => {
+            if(item.id === id){
+                CurrentData.push(item);
+            }
+        });
+
+        setdataPurchase(CurrentData);
+        history.push('/purchase');
+    };
 
     if(!dataAuth.isLogin) {
         return <Redirect to={'/login'} />
@@ -56,9 +81,8 @@ const DetailItem = (props) => {
                         <div className="row justify-between align-items-center">
                             <div className="col"><h3 className="c-detail__price">{`${dataItems.price}`}</h3></div>
                             <div className="col-auto pl-1">
-                                <button className="c-detail__btn" type="button">Buy</button>
+                                <button className="c-detail__btn" type="button" onClick={(e) => addItemPurchase(dataItems.id)}>Buy</button>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
@@ -70,13 +94,20 @@ const DetailItem = (props) => {
 const mapStateToProps = state => {
     return {
       dataStore: state.dataStore,
+      dataPurchase: state.dataPurchase,
       dataAuth: state.auth
     }
 }
 
+const mapDispatchToProps = dispatch => ({
+    setdataPurchase: (data) => { dispatch(setdataPurchase(data)) }
+});
+
 DetailItem.propTypes = {
     dataAuth: PropTypes.object,
-    dataStore: PropTypes.object
+    dataStore: PropTypes.object,
+    setdataPurchase: PropTypes.func,
+    dataPurchase: PropTypes.arrayOf(PropTypes.object)
 };
 
-export default connect(mapStateToProps)(DetailItem);
+export default connect(mapStateToProps, mapDispatchToProps)(DetailItem);

@@ -9,4 +9,21 @@
         line-height: normal;
         color: var(--color-black70);
     }
+
+    &__notfound {
+        text-align: center;
+
+        h2 {
+            font-weight: bold;
+            font-size: 2rem;
+            margin-bottom: .5rem;
+            color: var(--color-red80);
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: normal;
+            color: var(--color-black60);
+        }
+    }
 }

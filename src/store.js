@@ -13,8 +13,8 @@ const defaultState = {
     name: "",
     email: ""
   },
-  name: "",
-  dataStore: {}
+  dataStore: {},
+  dataPurchase: []
 };
 
 const composeEnhancers =
