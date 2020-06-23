@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Redirect } from "react-router-dom";
 import { isEmpty } from 'lodash';
 import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
 
 import Nav from '../../components/Nav';
 import ListItem from '../../components/ListItem';
@@ -20,6 +21,13 @@ const Purchase = (props) => {
 
     return (
         <div className="c-purchase">
+            <Helmet>
+                <title>Purchase Page - Store Apps</title>
+                <meta
+                name="description"
+                content="A React.js Boilerplate application homepage storeApps | Purchase page"
+                />
+            </Helmet>
             <Nav headerTitle="Purchase" />
 
             <div className="row">

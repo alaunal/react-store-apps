@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Redirect } from "react-router-dom";
 import { isEmpty, map } from 'lodash';
+import { Helmet } from 'react-helmet';
 
 import Nav from '../../components/Nav';
 import ListItem from '../../components/ListItem';
@@ -31,6 +32,13 @@ const Profile = (props) => {
 
     return (
         <div className="c-profile">
+            <Helmet>
+                <title>Profile Page - Store Apps</title>
+                <meta
+                name="description"
+                content="A React.js Boilerplate application homepage storeApps | Profile page"
+                />
+            </Helmet>
             <Nav headerTitle="Profle" />
             <div className="c-profile__content">
                 <div className="row align-items-center">

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Redirect } from "react-router-dom";
 import { isEmpty, map } from 'lodash';
+import { Helmet } from 'react-helmet';
 
 import { setdataPurchase } from '../../actions/dataPurchase';
 
@@ -55,7 +56,14 @@ const DetailItem = (props) => {
 
     return (
         <div className="c-detail">
-            <Nav headerTitle="Detail Item" />
+            <Helmet>
+                <title>Detail Page Item {dataItems.title} - Store Apps</title>
+                <meta
+                    name="description"
+                    content={`A React.js Boilerplate application homepage storeApps | Detail page | ${dataItems.title}`}
+                />
+            </Helmet>
+            <Nav headerTitle={`Detail of Item`} />
 
             <div className="row">
                 <div className="col-12 px-2 py-3">

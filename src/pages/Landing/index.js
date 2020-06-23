@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { isEmpty } from 'lodash';
+import { Helmet } from 'react-helmet';
 
 import SearchBar from './components/SearchBar';
 import BottomBar from './components/BottomBar';
@@ -18,6 +19,13 @@ const Landing = (props) => {
 
     return (
         <div className="c-landing">
+            <Helmet>
+                <title>HomePage of - Store Apps</title>
+                <meta
+                name="description"
+                content="A React.js Boilerplate application homepage storeApps"
+                />
+            </Helmet>
             <SearchBar />
             <ListCategory data={dataCategory} isLazy={true} />
             <div className="row">

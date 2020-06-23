@@ -29,9 +29,6 @@ const CardItem = (props) => {
                                     </Link>
                                     <p className="c-cardlist__price">{`${item.price}`}</p>
                                 </div>
-                                <div className="col-auto">
-                                    <button className="c-cardlist__btn" type="button"><i className="fas fa-cart-plus" /></button>
-                                </div>
                             </div>
                         </div>
                     </div>

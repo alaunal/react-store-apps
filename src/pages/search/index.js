@@ -34,7 +34,7 @@ const Search = (props) => {
             return byStringKey;
         });
 
-        setDataFilter(result);
+        setDataFilter(key.trim().length > 0 ? result : []);
     };
 
     if(!dataAuth.isLogin) {

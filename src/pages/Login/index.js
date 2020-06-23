@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Redirect } from "react-router-dom";
 import PropTypes from 'prop-types';
 import {isEmpty} from 'lodash';
+import { Helmet } from 'react-helmet';
 
 import { setUserAuth } from '../../actions/userAuth';
 
@@ -63,6 +64,13 @@ const Login = (props) => {
         
         return (
             <div className="c-login">
+                <Helmet>
+                    <title>Sign In Page - Store Apps</title>
+                    <meta
+                    name="description"
+                    content="A React.js Boilerplate application homepage storeApps | SignIn page"
+                    />
+                </Helmet>
                 <div className="c-login__panel">
                     <h3 className="c-login__heading">Store | <span>LOGIN </span></h3>
                     <input 
