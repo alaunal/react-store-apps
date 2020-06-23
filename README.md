@@ -1,6 +1,5 @@
 
 # React Simple Boilerplate - Store Apps
----
 Barebones boilerplate to get up and running real quick.
 
 ## Requirements
@@ -24,7 +23,7 @@ This should be installed on your computer in order to get up and running:
 As a prerequisite it's assumed you have npm or yarn installed.
 1.  **Clone Repo**
 
-	Make sure you have a **GULP STARTER-KIT** clone repository.
+	Make sure you have a clone repository.
 	```
 	https://github.com/alaunal/react-store-apps.git
 	```
