@@ -1,0 +1,54 @@
+.c-404 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-red100);
+    background: -webkit-linear-gradient(to top, var(--color-red100), var(--color-red80)); 
+    background: linear-gradient(to top, var(--color-red100), var(--color-red80));
+
+    &__wrapper {
+        position: relative;
+        color: var(--color-white100);
+        padding: 1rem 1.5rem;
+        text-align: center;
+    }
+
+    &__heading {
+        color: inherit;
+        font-size: 6rem;
+        font-weight: 300;
+        margin: 0 0 1rem 0;
+        letter-spacing: 1px;
+    }
+
+    &__title {
+        color: inherit;
+        font-size: 1.5rem;
+        font-weight: normal;
+        letter-spacing: .5px;
+        line-height: 1.5;
+        margin: 0 0 1rem 0;
+
+    }
+
+    &__desc {
+        color: inherit;
+        font-weight: 300;
+        margin-bottom: 1.5rem;
+    }
+
+    &__cta {
+        position: relative;
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: var(--color-white100);
+        color: var(--color-red80);
+        text-decoration: none;
+        margin-top: 2rem;
+        border-radius: 26px;
+        transition: all 0.25s ease-in-out;
+        cursor: pointer;
+    }
+}

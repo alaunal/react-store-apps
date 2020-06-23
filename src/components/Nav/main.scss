@@ -1,0 +1,29 @@
+.c-navbar {
+  box-sizing: border-box;
+  min-height: 60px;
+  width: 100%;
+  max-width: 600px;
+  position: fixed;
+  top: 0;
+  background: var(--color-red100);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 3px 0px;
+  z-index: 10;
+
+  &__btn-back {
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+
+    i {
+      font-size: inherit;
+      color: var(--color-white100);
+    }
+  }
+
+  &__header {
+      font-size: 20px;
+      margin: 0;
+      color: var(--color-white100);
+      font-weight: 300;
+  }
+}

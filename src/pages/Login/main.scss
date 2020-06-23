@@ -1,0 +1,110 @@
+.c-login {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-white100);
+
+  &__panel {
+    width: 100%;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 18px;
+    border-radius: 8px;
+    background-color: var(--color-white100);
+    border: 1px solid var(--color-black30);
+  }
+
+  &__heading {
+    color: var(--color-red80);
+    font-size: 28px;
+    font-weight: 900;
+    margin: 0 0 2rem 0;
+    text-align: center;
+
+    span {
+      font-weight: 300;
+      letter-spacing: 1px;
+      color: var(--color-black60);
+      font-size: 80%;
+    }
+  }
+
+  &__input-control {
+    box-shadow: none;
+    outline: none;
+    border-radius: 4px;
+    min-height: 44px;
+    font-size: 14px;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    border: 1px solid var(--color-black30);
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+    margin-bottom: 1rem;
+
+    &:focus,
+    &:active {
+      border: 1px solid var(--color-blue80);
+    }
+  }
+
+  &__diver {
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--color-black30);
+  }
+
+  &__btn {
+    display: flex;
+    min-width: 100px;
+    min-height: 38px;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--color-white100);
+    background-color: var(--color-primary100);
+    cursor: pointer;
+  }
+
+  &__btn-social {
+    display: flex;
+    width: 100%;
+    min-height: 40px;
+    padding: 8px 14px;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 300;
+
+    &--fb {
+      color: var(--color-white100);
+      background-color: #3B5998;
+    }
+
+    &--gl {
+      color: var(--color-white100) !important;
+      background-color: #DB4437 !important;
+      border-radius: 8px !important;
+      outline: none !important;
+      border: none !important;
+      box-shadow: none !important;
+      
+      span {
+        font-weight: 300 !important;
+        padding: 0 !important;
+        font-size: inherit !important;
+      }
+    }
+  }
+}

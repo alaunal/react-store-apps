@@ -1,0 +1,43 @@
+// -- COLOR VAR
+// $color-white100: #ffffff;
+// $color-black100: #000000;
+// $color-black80: #222222;
+// $color-black70: #666666;
+// $color-black60: #888888;
+// $color-black50: #c4c4c4;
+// $color-black40: #cccccc;
+// $color-black30: #dddddd;
+// $color-black20: #f7f7f7;
+// $color-primary100: #52796f;
+// $color-primary80: #84a98c;
+// $color-blue100: #247ba0;
+// $color-blue80: #5095b3;
+// $color-blue60: #7cb0c6;
+// $color-red100: #f25f5c;
+// $color-red80: #f57f7d;
+// $color-red60: #f79f9d;
+// $color-green100: #70c1b3;
+// $color-green80: #8dcdc2;
+// $color-green60: #a9dad1;
+// $color-yellow100: #ffe066;
+// $color-yellow80: #ffe685;
+// $color-yellow60: #ffeca3;
+
+// -- FONT VAR
+$font-fm-base: "Roboto", sans-serir;
+
+// -- TYPOGRAPHY VARIABLE
+
+$font-base-size: 16px;
+$font-base-line-height: 1.5em !default;
+$font-scale: 1.414 !default;
+
+$paragraph-color: var(--color-black80);
+$paragraph-size: 16px;
+$paragraph-line-height: $font-base-line-height;
+$paragraph-margin: 16px;
+
+$header-color: var(--color-black80);
+$header-size: 48px;
+$header-line-height: 1.25;
+$header-margin: $paragraph-margin * 1.2;

@@ -1,0 +1,52 @@
+{
+  "name": "store-apps",
+  "version": "0.1.0",
+  "description": "Store Apps - SehatQ test",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config=./webpack.dev.js",
+    "build": "webpack --config=./webpack.prod.js"
+  },
+  "keywords": [
+    "react",
+    "store-apps"
+  ],
+  "author": "A.kauniyyah <alaunalkauniyyah3@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "connected-react-router": "^6.6.1",
+    "history": "^4.10.1",
+    "lodash": "^4.17.15",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-facebook-login": "^4.1.1",
+    "react-google-login": "^5.1.20",
+    "react-helmet": "^6.1.0",
+    "react-redux": "^7.1.3",
+    "react-router-config": "^5.1.1",
+    "react-router-dom": "^5.2.0",
+    "react-slick": "^0.26.1",
+    "react-transition-group": "^4.4.1",
+    "redux": "^4.0.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@hot-loader/react-dom": "^16.13.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.6.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.14.1",
+    "react-hot-loader": "^4.12.19",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2"
+  }
+}

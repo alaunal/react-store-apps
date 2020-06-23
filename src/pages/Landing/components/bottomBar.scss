@@ -1,0 +1,33 @@
+.c-bottombar {
+    box-sizing: border-box;
+    min-height: 56px;
+    width: 100%;
+    max-width: 600px;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid var(--color-black30);
+    box-shadow: 0 -2px 4px 0 rgba(108,114,124,0.16);
+    background-color: var(--color-white100);
+    z-index: 10;
+
+    &__item {
+        width: 100%;
+        display: block;
+        color: var(--color-black50);
+        text-align: center;
+        padding: 0 .5rem;
+
+        i {
+            color: inherit;
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 12px;
+            line-height: normal;
+            font-weight: 700;
+            color: inherit;
+            color: var(--color-black50);
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.c-searchbar {
+  box-sizing: border-box;
+  min-height: 60px;
+  width: 100%;
+  max-width: 600px;
+  position: fixed;
+  top: 0;
+  background: var(--color-red100);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 3px 0px;
+  z-index: 10;
+
+  &__btn-wishlist {
+    display: inline-block;
+    font-size: 24px;
+    text-decoration: none;
+
+    i {
+      font-size: inherit;
+      color: var(--color-white100);
+    }
+  }
+
+  &__input {
+    box-shadow: none;
+    outline: none;
+    border-radius: 28px;
+    min-height: 38px;
+    font-size: 14px;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    border: 1px solid var(--color-white100);
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+
+    &:focus,
+    &:active {
+      outline: none;
+      border: 1px solid var(--color-white100);
+    }
+  }
+
+  &__form {
+      position: relative;
+      display: block;
+
+      i {
+          position: absolute;
+          right: .8rem;
+          top: .7rem;
+          font-size: 14px;
+          color: var(--color-black60);
+      }
+  }
+}

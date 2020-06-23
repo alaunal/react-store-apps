@@ -1,0 +1,79 @@
+.c-detail {
+    position: relative;
+    padding: 60px 0;
+
+    &__content {
+        position: relative;
+        box-sizing: border-box;
+
+        .fa-heart {
+            font-size: 24px;
+            color: var(--color-black30);
+
+            &.wishlist {
+                color: var(--color-red80);
+            }
+        }
+    }
+
+    &__header {
+        position: relative;
+        box-sizing: border-box;
+
+        img {
+            display: block;
+            border-radius: 8px;
+        }
+
+        i {
+            position: absolute;
+            right: 4px;
+            top: 4px;
+            z-index: 1;
+            font-size: 14px;
+            border-radius: 50%;
+            background-color: var(--color-primary100);
+            color: var(--color-white100);
+            padding: 8px;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: normal;
+        color: var(--color-black80);
+    }
+
+    &__desc {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.5;
+        color: var(--color-black70);
+        letter-spacing: .5px;
+    }
+
+    &__price {
+        font-size: 28px;
+        font-weight: 300;
+        margin: 0;
+        line-height: normal;
+        color: var(--color-red100);
+    }
+
+    &__btn {
+        display: flex;
+        min-width: 100px;
+        min-height: 38px;
+        padding: 8px 12px;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+        border: none;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 300;
+        color: var(--color-white100);
+        background-color: var(--color-primary100);
+      }
+}

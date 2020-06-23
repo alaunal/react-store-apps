@@ -1,0 +1,86 @@
+.c-listItem {
+  position: relative;
+  box-sizing: border-box;
+
+  &__wrapper {
+    position: relative;
+    background-color: var(--color-white100);
+    background-clip: border-box;
+    border: 1px solid var(--color-black30);
+    padding: 1rem 0;
+    border-radius: 8px;
+
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+      border: 1px solid var(--color-black30);
+    }
+  }
+
+  &__placeholder {
+    display: block;
+    background-color: #444;
+    border-radius: 8px;
+    height: 80px !important;
+    width: 100% !important;
+    opacity: 0.1;
+    animation: fading 1.5s infinite;
+
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+  }
+
+  &__img {
+    width: 100%;
+    max-width: none;
+    overflow: hidden;
+    background-color: var(--color-black30);
+    position: relative;
+    height: 65px;
+    width: 65px;
+    border-radius: 8px;
+
+    img {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      object-fit: cover;
+      height: 65px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--color-black60);
+    line-height: normal;
+  }
+
+  &__price {
+    margin: 0;
+    font-weight: 300;
+    font-size: 1rem;
+    color: var(--color-red80);
+    line-height: normal;
+  }
+}
+
+@keyframes fading {
+  0% {
+    opacity: 0.1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 0.1;
+  }
+}

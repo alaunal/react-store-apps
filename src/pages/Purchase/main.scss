@@ -1,0 +1,12 @@
+.c-purchase {
+    position: relative;
+    padding: 60px 0;
+
+    &__title {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: .5rem;
+        line-height: normal;
+        color: var(--color-black70);
+    }
+}
