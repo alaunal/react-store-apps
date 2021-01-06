@@ -14,7 +14,7 @@
   "author": "A.kauniyyah <alaunalkauniyyah3@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "connected-react-router": "^6.6.1",
     "history": "^4.10.1",
     "lodash": "^4.17.19",
